@@ -6,6 +6,7 @@
  * Change Logs:
  * Date           Author       Notes
  * 2019-11-09     xiangxistu   first version
+ * 2020-05-18     chenyaxing   modify stm32_uart_config
  */
 
 #include "stdlib.h"
@@ -230,6 +231,7 @@ char * up_char(char * c)
     }
     return 0;
 }
+
 static void get_pin_by_name(const char* pin_name, GPIO_TypeDef **port, uint16_t *pin)
 {
     int pin_num = atoi((char*) &pin_name[2]);
@@ -371,7 +373,6 @@ static rt_err_t stm32_gpio_configure(struct stm32_uart_config *config)
     return RT_EOK;
 }
 
-
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 {
     /* if this uart is shell function */
@@ -454,4 +455,3 @@ char rt_hw_console_getchar(void)
 }
 #endif /* RT_USING_FINSH */
 #endif /* RT_USING_CONSLONE */
-

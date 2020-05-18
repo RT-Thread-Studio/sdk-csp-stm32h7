@@ -1,6 +1,6 @@
-#include <board.h>
 #include "string.h"
 #include "stdlib.h"
+#include <board.h>
 #include "drv_common.h"
 #include "uart_config.h"
 
