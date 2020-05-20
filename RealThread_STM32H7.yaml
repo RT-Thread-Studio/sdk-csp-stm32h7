@@ -17,7 +17,7 @@ series:
 
     All the other features that have made single-core STM32H7 MCUs a success are still available in the dual-core versions.
     The STM32H7 series remains more than ever the microcontroller with an embedded Flash memory offering the highest performance on the market.
-  series_name: RealThread_STM32H7xx
+  series_name: STM32H7
   peripheral: {}
   sub_series:
   - sub_series_name: STM32H742
