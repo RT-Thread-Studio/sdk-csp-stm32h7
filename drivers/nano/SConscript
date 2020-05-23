@@ -32,5 +32,6 @@ include_str = """
 #include <stm32h7xx.h>
 """
 modify_board_h_file(os.path.join(cwd, file_path), include_str)
+os.remove(os.path.join(cwd,"SConscript"))
 
 Return('group')
