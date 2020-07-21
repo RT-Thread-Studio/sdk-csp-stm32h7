@@ -29,8 +29,9 @@ group = DefineGroup('', [], depend=[''], CPPPATH=[])
 
 file_path = "board.h"
 include_str = """
+#include <rtthread.h>
 #include <stm32h7xx.h>
-#include <drv_common.h>
+#include "drv_common.h"
 """
 modify_board_h_file(os.path.join(cwd, file_path), include_str)
 os.remove(os.path.join(cwd,"SConscript"))
