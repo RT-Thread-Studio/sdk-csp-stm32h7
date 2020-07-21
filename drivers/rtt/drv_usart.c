@@ -398,6 +398,8 @@ static rt_err_t stm32_gpio_configure(struct stm32_uart_config *config)
          { .pin_index = GET_PIN(B,  6), .afs[0] = {.uart_num = UART_IS_RX|5, .af_num = 14}},
          { .pin_index = GET_PIN(B,  6), .afs[0] = {.uart_num = UART_IS_TX|1, .af_num =  7}},
          { .pin_index = GET_PIN(B,  7), .afs[0] = {.uart_num = UART_IS_RX|1, .af_num =  7}},
+         { .pin_index = GET_PIN(B,  6), .afs[0] = {.uart_num = UART_IS_TX|10, .af_num = 8}},
+         { .pin_index = GET_PIN(B,  7), .afs[0] = {.uart_num = UART_IS_RX|10, .af_num = 8}},
          { .pin_index = GET_PIN(B,  9), .afs[0] = {.uart_num = UART_IS_TX|4, .af_num =  8}},
          { .pin_index = GET_PIN(B,  8), .afs[0] = {.uart_num = UART_IS_RX|4, .af_num =  8}},
          { .pin_index = GET_PIN(B, 10), .afs[0] = {.uart_num = UART_IS_TX|3, .af_num =  7}},
@@ -435,7 +437,16 @@ static rt_err_t stm32_gpio_configure(struct stm32_uart_config *config)
       };
 
    /* get tx/rx pin index */
-   uart_num = config->name[4] - '0';
+   if(config->name[0] == 'l')
+   {
+       /*if the "config->name" first character is "l", which means low-power serial port */
+       uart_num = 9 + config->name[6] - '0';
+   }
+   else
+   {
+       uart_num = config->name[4] - '0';
+   }
+   
    tx_pin_num = stm32_get_pin(tx_port, tx_pin);
 
    for (index = 0; index < sizeof(uart_afs) / sizeof(struct gpio_uart_af); index = index + 2)
@@ -466,14 +477,14 @@ static rt_err_t stm32_gpio_configure(struct stm32_uart_config *config)
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
 #if defined(SOC_SERIES_STM32L0) || defined(SOC_SERIES_STM32F0) || defined(SOC_SERIES_STM32G0) || defined(SOC_SERIES_STM32H7)
-    GPIO_InitStruct.Alternate = tx_af_num;
+    GPIO_InitStruct.Alternate = tx_af_num;//GPIO_AF8_LPUART
 #endif
     HAL_GPIO_Init(tx_port, &GPIO_InitStruct);
 
     /* rx pin initialize */
     GPIO_InitStruct.Pin = rx_pin;
 #if defined(SOC_SERIES_STM32L0) || defined(SOC_SERIES_STM32F0) || defined(SOC_SERIES_STM32G0) || defined(SOC_SERIES_STM32H7)
-    GPIO_InitStruct.Alternate = rx_af_num;
+    GPIO_InitStruct.Alternate = rx_af_num;//rx_af_num
 #endif
     HAL_GPIO_Init(rx_port, &GPIO_InitStruct);
 
