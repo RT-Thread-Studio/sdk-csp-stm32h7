@@ -29,7 +29,7 @@ group = DefineGroup('', [], depend=[''], CPPPATH=[])
 
 file_path = "board.h"
 include_str = """
-#include <rtthread.h>
+#include <rtdevice.h>
 #include <stm32h7xx.h>
 #include "drv_common.h"
 """
