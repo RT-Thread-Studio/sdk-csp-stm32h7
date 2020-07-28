@@ -67,13 +67,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -129,13 +123,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -222,13 +210,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -253,13 +235,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -346,13 +322,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -377,13 +347,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -439,13 +403,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -501,13 +459,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -688,13 +640,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -750,13 +696,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -843,13 +783,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -874,13 +808,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -967,13 +895,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -998,13 +920,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1060,13 +976,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1122,13 +1032,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1272,13 +1176,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1303,13 +1201,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1334,13 +1226,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1365,13 +1251,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1396,13 +1276,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1427,13 +1301,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1458,13 +1326,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -1489,13 +1351,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4219,13 +4075,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4254,13 +4104,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4289,13 +4133,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4324,13 +4162,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4359,13 +4191,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4394,13 +4220,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4429,13 +4249,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4464,13 +4278,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4499,13 +4307,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4534,13 +4336,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4569,13 +4365,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4604,13 +4394,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4639,13 +4423,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4674,13 +4452,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -4709,13 +4481,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5351,13 +5117,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5386,13 +5146,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5421,13 +5175,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5456,13 +5204,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5491,13 +5233,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5526,13 +5262,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5561,13 +5291,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5596,13 +5320,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5631,13 +5349,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5666,13 +5378,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5701,13 +5407,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5736,13 +5436,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5771,13 +5465,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5806,13 +5494,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
@@ -5841,13 +5523,7 @@ series:
         access: rx
         id: IROM1
         start: '0x08000000'
-        size: '0x00100000'
-        default: '1'
-      - name: FLASH_Bank2
-        access: rx
-        id: IROM2
-        start: '0x08100000'
-        size: '0x00100000'
+        size: '0x00200000'
         default: '1'
       compiler:
         gcc:
