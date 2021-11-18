@@ -16,9 +16,6 @@
   *                        opensource.org/licenses/BSD-3-Clause
   *
   ******************************************************************************
-  *
-  * Modified by Arm
-  ******************************************************************************
   */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -110,18 +107,33 @@ typedef enum
                                     }while (0)
 #endif /* USE_RTOS */
 
-#if  defined ( __GNUC__ ) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
+
+#if defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050) /* ARM Compiler V6 */
+  #ifndef __weak
+    #define __weak  __attribute__((weak))
+  #endif
+  #ifndef __packed
+    #define __packed  __attribute__((packed))
+  #endif
+#elif defined ( __GNUC__ ) && !defined (__CC_ARM) /* GNU Compiler */
   #ifndef __weak
     #define __weak   __attribute__((weak))
   #endif /* __weak */
   #ifndef __packed
     #define __packed __attribute__((__packed__))
   #endif /* __packed */
-#endif /* __GNUC__, ARM Compiler 6*/
+#endif /* __GNUC__ */
 
 
 /* Macro to get variable aligned on 4-bytes, for __ICCARM__ the directive "#pragma data_alignment=4" must be used instead */
-#if defined   (__GNUC__) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
+#if defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050) /* ARM Compiler V6 */
+  #ifndef __ALIGN_BEGIN
+    #define __ALIGN_BEGIN
+  #endif
+  #ifndef __ALIGN_END
+    #define __ALIGN_END      __attribute__ ((aligned (4)))
+  #endif
+#elif defined ( __GNUC__ ) && !defined (__CC_ARM) /* GNU Compiler */
   #ifndef __ALIGN_END
     #define __ALIGN_END    __attribute__ ((aligned (4)))
   #endif /* __ALIGN_END */
@@ -133,16 +145,16 @@ typedef enum
     #define __ALIGN_END
   #endif /* __ALIGN_END */
   #ifndef __ALIGN_BEGIN
-    #if defined   (__CC_ARM)      /* ARM Compiler */
+    #if defined   (__CC_ARM)      /* ARM Compiler V5 */
       #define __ALIGN_BEGIN    __align(4)
     #elif defined (__ICCARM__)    /* IAR Compiler */
       #define __ALIGN_BEGIN
     #endif /* __CC_ARM */
   #endif /* __ALIGN_BEGIN */
-#endif /* __GNUC__, ARM Compiler 6 */
+#endif /* __GNUC__ */
 
 /* Macro to get variable aligned on 32-bytes,needed for cache maintenance purpose */
-#if defined   (__GNUC__) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
+#if defined   (__GNUC__)        /* GNU Compiler */
   #define ALIGN_32BYTES(buf)  buf __attribute__ ((aligned (32)))                                    
 #elif defined (__ICCARM__)    /* IAR Compiler */
   #define ALIGN_32BYTES(buf) _Pragma("data_alignment=32") buf  
@@ -153,9 +165,9 @@ typedef enum
 /**
   * @brief  __RAM_FUNC definition
   */
-#if defined ( __CC_ARM   ) && (defined (__ARMCC_VERSION) && (__ARMCC_VERSION < 6010050))
-/* ARM Compiler
-   ------------
+#if defined ( __CC_ARM   ) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
+/* ARM Compiler V4/V5 and V6
+   --------------------------
    RAM functions are defined using the toolchain options.
    Functions that are executed in RAM should reside in a separate source module.
    Using the 'Options for File' dialog you can simply change the 'Code / Const'
@@ -172,8 +184,8 @@ typedef enum
 */
 #define __RAM_FUNC __ramfunc
 
-#elif defined   (  __GNUC__  ) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
-/* GNU Compiler, ARM Compiler 6
+#elif defined   (  __GNUC__  )
+/* GNU Compiler
    ------------
   RAM functions are defined using a specific toolchain attribute
    "__attribute__((section(".RamFunc")))".
@@ -181,6 +193,24 @@ typedef enum
 #define __RAM_FUNC __attribute__((section(".RamFunc")))
 
 #endif
+
+/**
+  * @brief  __NOINLINE definition
+  */
+#if defined ( __CC_ARM   ) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)) || defined   (  __GNUC__  )
+/* ARM V4/V5 and V6 & GNU Compiler
+   -------------------------------
+*/
+#define __NOINLINE __attribute__ ( (noinline) )
+
+#elif defined ( __ICCARM__ )
+/* ICCARM Compiler
+   ---------------
+*/
+#define __NOINLINE _Pragma("optimize = no_inline")
+
+#endif
+
 
 #ifdef __cplusplus
 }
