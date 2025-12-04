@@ -17,8 +17,6 @@
 #include <drv_common.h>
 #include "drv_dma.h"
 #include <string.h>
-#include <drivers/mmcsd_core.h>
-#include <drivers/sdio.h>
 
 #ifdef BSP_USING_SDIO
 
