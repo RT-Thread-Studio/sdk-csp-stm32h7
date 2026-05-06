@@ -61,7 +61,7 @@
 /* #define HAL_RNG_MODULE_ENABLED   */
 #define HAL_RTC_MODULE_ENABLED
 /* #define HAL_SAI_MODULE_ENABLED   */
-/* #define HAL_SD_MODULE_ENABLED   */
+#define HAL_SD_MODULE_ENABLED
 /* #define HAL_MMC_MODULE_ENABLED   */
 /* #define HAL_SPDIFRX_MODULE_ENABLED   */
 /* #define HAL_SPI_MODULE_ENABLED   */
@@ -131,6 +131,12 @@
 #if !defined  (LSE_STARTUP_TIMEOUT)
   #define LSE_STARTUP_TIMEOUT    ((uint32_t)5000U)   /*!< Time out for LSE start up, in ms */
 #endif /* LSE_STARTUP_TIMEOUT */
+
+#if !defined  (LSI_VALUE)
+  #define LSI_VALUE  (32000UL)              /*!< LSI Typical Value in Hz*/
+#endif /* LSI_VALUE */                      /*!< Value of the Internal Low Speed oscillator in Hz
+                                              The real value may vary depending on the variations
+                                              in voltage and temperature.*/
 
 /**
   * @brief External clock source for I2S peripheral
