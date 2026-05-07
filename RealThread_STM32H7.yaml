@@ -3,7 +3,7 @@ vendor: RealThread
 dvendor: STMicroelectronics
 name: STM32H7
 yaml_version: 2
-version: 0.2.1
+version: 0.2.3
 type: Chip_Support_Packages
 family_name: STM32
 series:
